@@ -1,12 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <title>Task Week</title>
+
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+        }
+    </style>
 </head>
+
 <body>
+    <!-- Task # 3 -->
+    <!-- <div>
+        <h1 style="text-align: center;">Area Of Triangle</h1>
+        <div style="display: flex;justify-content: space-around;">
+            <div>
+                <p>Side 1</p>
+                <input id="side1" type="number" />
+
+            </div>
+            <div>
+                <p>Side 2</p>
+                <input id="side2" type="number"  />
+
+            </div>
+            <div>
+                <p>Side 3</p>
+                <input id="side3" type="number"  />
+
+            </div>
+        </div>
+        <div style="text-align: center;margin-top: 80px;;"><button style="padding: 10px 20px;" onclick="Calc()">Calculate</button></div>
+        <div style="text-align: center;margin-top: 100px;">
+
+            Answer : <input id="answer" disabled
+                style="border: none;border-bottom: 2px solid greenyellow;outline: none;font-size: 20px;" />
+        </div>
+    </div> -->
+<!-- =======================================xxxx============================= -->
+    <!-- Task # 5 -->
+    <div>
+        <h3>Leap Year Calculator</h3>
+        <input id="year" type="number" />
+        <button onclick="Calc()">Calculate</button>
+        <br />
+
+        <h2 id="answer"></h2>
+    </div>
+
     <script>
         //  Task 1//
         // let today=new Date();
@@ -19,7 +68,7 @@
         // if(hour >=12 && hour <=24){
         //     console.log(`Current Time is : ${hour - 12} PM : ${minutes} : ${second}`)
         // }
-    //    ============xxxxx===================xxxxx==================================//
+        //    ============xxxxx===================xxxxx==================================//
         // Task 2 //
         // let today=new Date()
         // let dd=String(today.getDate()).padStart(2,'0');
@@ -31,9 +80,37 @@
         // console.log(`${mm}/${dd}/${yyyy}`)
         // ===================xxxxx============xxxxx=================================//
 
+        // Task 3 //
+    //     function Calc() {
+    //         let side1 = document.getElementById("side1").value;
+      
+    //   let side2 = document.getElementById("side2").value;
+    //   let side3 = document.getElementById("side3").value;
+    //   let answer = document.getElementById("answer");
+    //   let sum = (Number(side1) + Number(side2) + Number(side3))/2;
+    //   var areaOfTriangle =  Math.sqrt(sum*((sum-side1)*(sum-side2)*(sum-side3)));
+    //   answer.value=areaOfTriangle.toFixed(4)
+
+    //     }
+    // ================xxx===============xxx======================= //
+    
+    // Task 5 //
+    function Calc(){
+        let year=Number(document.getElementById("year").value);
+        let answer=document.getElementById("answer");
         
+        // (year % 100 === 0) ? (year % 400 === 0) : (year % 4 === 0);
+        if((year % 100 === 0) && (year % 400 === 0)){
+            console.log("Leap year")
+        }else{
+            console.log("not a leap year")
+        }
+      
+
+    }
 
     </script>
-    
+
 </body>
+
 </html>
