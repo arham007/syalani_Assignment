@@ -45,16 +45,8 @@
                 style="border: none;border-bottom: 2px solid greenyellow;outline: none;font-size: 20px;" />
         </div>
     </div> -->
-<!-- =======================================xxxx============================= -->
-    <!-- Task # 5 -->
-    <div>
-        <h3>Leap Year Calculator</h3>
-        <input id="year" type="number" />
-        <button onclick="Calc()">Calculate</button>
-        <br />
+    <!-- =======================================xxxx============================= -->
 
-        <h2 id="answer"></h2>
-    </div>
 
     <script>
         //  Task 1//
@@ -81,34 +73,93 @@
         // ===================xxxxx============xxxxx=================================//
 
         // Task 3 //
-    //     function Calc() {
-    //         let side1 = document.getElementById("side1").value;
-      
-    //   let side2 = document.getElementById("side2").value;
-    //   let side3 = document.getElementById("side3").value;
-    //   let answer = document.getElementById("answer");
-    //   let sum = (Number(side1) + Number(side2) + Number(side3))/2;
-    //   var areaOfTriangle =  Math.sqrt(sum*((sum-side1)*(sum-side2)*(sum-side3)));
-    //   answer.value=areaOfTriangle.toFixed(4)
+        //     function Calc() {
+        //         let side1 = document.getElementById("side1").value;
 
-    //     }
-    // ================xxx===============xxx======================= //
-    
-    // Task 5 //
-    function Calc(){
-        let year=Number(document.getElementById("year").value);
-        let answer=document.getElementById("answer");
-        
-        // (year % 100 === 0) ? (year % 400 === 0) : (year % 4 === 0);
-        if((year % 100 === 0) && (year % 400 === 0)){
-            console.log("Leap year")
-        }else{
-            console.log("not a leap year")
-        }
-      
+        //   let side2 = document.getElementById("side2").value;
+        //   let side3 = document.getElementById("side3").value;
+        //   let answer = document.getElementById("answer");
+        //   let sum = (Number(side1) + Number(side2) + Number(side3))/2;
+        //   var areaOfTriangle =  Math.sqrt(sum*((sum-side1)*(sum-side2)*(sum-side3)));
+        //   answer.value=areaOfTriangle.toFixed(4)
 
-    }
+        //     }
+        // ================xxx===============xxx======================= //
 
+        // Task 5 //
+        // let year=+prompt("Enter the year to check whether its leap year or not");
+        // if((year % 4 == 0) && (year%100 !=0) || (year % 400==0)){
+        //     document.write(`${year} is the Leap Year`)
+        // }else{
+        //     document.write(`${year} is not the Leap Year`)
+
+        // }
+        // ================xxx===============xxx======================= //
+        // Task 6//
+
+        // for (let year=2014;year<=2050;year++){
+        //     let date=new Date(year,0);
+        //     if(date.getDay()===0){
+        //         document.write(`1st January is being a Sunday  ${year}  <br />`)
+        //     }
+        // }
+        // ================xxx===============xxx======================= //
+        // Task 7 //
+        // const randomNumber = Math.ceil(Math.random() * 10);
+        // console.log(randomNumber)
+        // let input = +prompt('Guess the number between 1 and 10 ');
+        // if (randomNumber == input)
+        //    document.write('Congratulations !! Matched');
+        // else
+        //    document.write('Not matched, the number was ' + randomNumber);
+
+        // ================xxx===============xxx======================= //
+        // Task 8 //
+        // today = new Date();
+        // let nextAugust = new Date(today.getFullYear(), 8, 14);
+        // if (today.getMonth() == 8 && today.getDate() > 14) {
+        //     nextAugust.setFullYear(nextAugust.getFullYear() + 1);
+        // }
+        // let one_day = 1000 * 60 * 60 * 24;
+        // document.write(Math.ceil((nextAugust.getTime() - today.getTime()) / (one_day)) +
+        //     " days left until 14 August!");
+
+        // ================xxx===============xxx======================= //
+        // Task 9 //
+        // let num1=+prompt("Enter First Number !")
+        // let num2=+prompt("Enter Second Number !")
+        // let opt=prompt("Enter operation you want to perform !");
+        // if((opt=="multiply") || (opt=="*") || (opt=="mul")){
+        //     let result=num1*num2;
+        //     document.write(`Multiplication of ${num1} & ${num2} is ${result}`)
+        // }
+        // else if((opt=="divide") || (opt=="/") || (opt=="div")){
+        //     let result=num1 / num2;
+        //     document.write(`Division of ${num1} & ${num2} is ${result}`)
+
+        // }
+        // ================xxx===============xxx======================= //
+
+        // Task 10 //
+        // let temp = +prompt("Enter the Temperature");
+        // function cToF(temp) {
+        //     var cTemp = temp;
+        //     var cToFahr = cTemp * 9 / 5 + 32;
+        //     var message = cTemp + '\xB0C is ' + cToFahr + ' \xB0F.';
+        //     document.write(message + "<br />")
+        // }
+
+        // function fToC(temp) {
+        //     var fTemp = temp;
+        //     var fToCel = (fTemp - 32) * 5 / 9;
+        //     var message = fTemp + '\xB0F is ' + fToCel + '\xB0C.';
+        //     document.write(message + "<br />")
+            
+        // }
+        // cToF(temp)
+        // fToC(temp)
+        // ================xxx===============xxx======================= //
+        // Task 11 //
     </script>
 
 </body>
